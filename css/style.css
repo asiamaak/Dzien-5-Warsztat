@@ -28,6 +28,19 @@ body {
 a {
     text-decoration: none;
 }
+.logo {
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.btn {
+    background-color: var(--color-primary);
+    border-radius: var(--button-radius);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
 
 /*STYLOWANIE HEADERA*/
 .header {
@@ -40,34 +53,63 @@ a {
     align-items: center;
     height: 100%;
 }
-header a.logo {
-    font-family: var(--font-raleway);
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--color-primary);
-}
-header .page-nav-list {
+
+.page-nav-list {
     display: flex;
 }
-header .page-nav-list li {
+.page-nav-list li {
     padding: 0 25px;
 }
-header .page-nav-list li:last-child {
+.page-nav-list li:last-child {
     padding-right: 0;
 }
 
-header .page-nav-list a {
+.page-nav-list a {
     text-transform: uppercase;
     color: var(--color-grey);
     font-weight: 700;
     font-size: 0.6875rem;
-    letter-spacing: 0.1875rem;
+    letter-spacing: 0.205rem;
     border-bottom: 4px solid transparent;
     padding: 28px 15px 22px;
 /*    padding dla a tak ustawiony aby dolny border był tuż nad linia dolną */
 }
-header .page-nav-list a:hover {
+.page-nav-list a:hover {
     color: var(--color-black);
     cursor: pointer;
     border-color: var(--color-primary);
+}
+
+/*STYLOWANIE BANNERU, SEKCJI OTWIERAJĄCEJ*/
+
+.banner-content {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title {
+    font-size: 3.0625rem;
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    text-align: center;
+    line-height: 57px;
+}
+.banner-text {
+    color: var(--color-black);
+    text-align: center;
+    line-height: 22px;
+    padding: 20px 0 38px;
+}
+.banner-btn {
+    display: block;
+    color: var(--color-white);
+    font-weight: 700;
+    padding: 23px 0 22px;
+    text-align: center;
+    width: 440px;
+}
+.banner-img {
+    width: 100%;
 }
