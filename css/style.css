@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1352px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 1626px;
+    height: 4234px;
+}
+
+
