@@ -274,14 +274,131 @@ a {
 .benefits-img {
     height: auto;
 }
+.macbook .benefits-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    transform: rotate(45deg);
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--color-redish);
+    top: 5px;
+    right: -120px;
+}
 .macbook .benefits-img {
     width: 385px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 90px;
+    right: -60px;
+}
+.phone .benefits-image-container {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    left:-120px;
+    margin: 0 auto;
+    background-color: var(--color-primary);
 }
 .phone .benefits-img {
     width: 425px;
+    position: absolute;
+    top: 20px;
 }
+
 .trumpet .benefits-img {
     width: 295px;
     margin-top: 70px;
 }
+
+/*SEKCJA PRICING*/
+.pricing {
+    width: 1266px;
+    margin-top: 100px;
+}
+.pricing > .title {
+    line-height: 42px;
+    text-align: center;
+}
+.boxes-container {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.pricing-box {
+    width: 370px;
+    height: 460px;
+    margin: 40px 0;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.big-box {
+    border-color: var(--color-primary);
+    box-shadow: 5px 1px 27px var(--color-shadow);
+    width: 400px;
+    height:500px;
+    margin: 0;
+}
+.pricing-type {
+    text-align: center;
+    padding-top: 35px;
+}
+.pricing-title {
+    font-size: 1.25rem;
+    font-family: var(--font-raleway);
+    font-weight: bold;
+}
+.big-box .pricing-price {
+    color: var(--color-primary);
+}
+.pricing-box:nth-child(3) {
+    border-color: var(--color-green);
+}
+.pricing-box:nth-child(3) .pricing-price {
+    color: var(--color-green);
+}
+
+.pricing-price {
+    font-size: 2.875rem;
+    color: var(--color-redish);
+    font-weight: 300;
+    padding-top: 15px;
+    line-height: 70px;
+}
+.pricing-limited {
+    font-family: var(--font-raleway);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.pricing-list {
+    padding-bottom: 60px;
+}
+.pricing-list li {
+    padding-bottom: 20px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+.pricing-single::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    background-image: url("../images/Ckechmark-1.svg");
+}
+.single-not::before {
+    background-image: url("../images/Close.svg");
+}
+
+
 
