@@ -39,6 +39,7 @@ a {
     background-color: var(--color-primary);
     border-radius: var(--button-radius);
     padding: 15px 55px;
+    cursor: pointer;
 }
 .title {
     font-size: 2.25rem;
@@ -50,7 +51,7 @@ a {
 /*STYLOWANIE HEADERA*/
 .header {
     height: 70px;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0 3px 6px #00000029;
 }
 .header-container {
     display: flex;
@@ -452,39 +453,73 @@ a {
     margin-right: 10px;
 }
 
+/*checkbox*/
 .contact-form {
-    width: 440px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 440px;
 }
 .contact-form-box {
-    display: flex;
-    flex-direction: column;
 }
 
 .contact-label {
     font-size: 0.6875rem;
-    letter-spacing: 0.2rem;
+    line-height: 1rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--color-primary);
     font-weight: 700;
 }
 .contact-input {
-    outline: none;
+    display: block;
+    width: 440px;
     border: none;
     border-bottom: 1px solid var(--color-grey);
+    line-height: 2.5rem;
 }
 
-.contact-checkbox {
-    display: flex;
-    flex-direction: column;
+
+
+.checkbox-label {
+    margin: 30px 0 20px;
+    cursor: pointer;
+    padding-left: 35px;
+    position: relative;
+    font-size: 1.375rem;
 }
+
+.checkbox-label input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    position: absolute;
+    top: 200;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+.checkbox-label input:checked ~ span {
+    background-image: url("/images/Checkmark.svg");
+    background-position: center;
+}
+
 .checkbox-text {
+    margin-left: 35px;
     font-size: 0.75rem;
     color: var(--color-grey);
+    line-height: 17px;
 }
-.contact-form-btn {
+
+.contact-btn {
     color: white;
     font-size: 0.8125rem;
     padding: 20px 100px;
@@ -492,8 +527,35 @@ a {
     line-height: 1.125rem;
     margin-top: 20px;
     align-self: flex-end;
-
 }
 
-
+.footer {
+    margin-top: 60px;
+    height: 90px;
+    padding: 20px 0;
+    box-shadow: 0 -5px 40px #00000029;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-logo {
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+.footer-copy {
+    margin-top: 5px;
+    font-size: 0.6875rem;
+    line-height: 1.5rem;
+    color: var(--color-grey);
+}
+.footer-icons a:nth-child(1) {
+    margin-right: 25px;
+}
 
