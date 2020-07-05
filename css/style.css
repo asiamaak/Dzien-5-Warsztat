@@ -423,5 +423,77 @@ a {
     background-color: var(--color-green);
 }
 
+/*SEKCJA CONTACT*/
+.contact {
+    margin-top: 180px;
+}
+.contact-container {
+    width: 896px;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.contact-title {
+    font-size: 3.0625rem;
+    line-height: 3.4375rem;
+}
+.contact-text {
+    margin: 22px 0 42px;
+}
+.contact-link {
+    font-weight: 600;
+    color: var(--color-grey);
+    margin-right: 20px;
+}
+.contact-img {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 0.6875rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+.contact-input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.contact-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-text {
+    font-size: 0.75rem;
+    color: var(--color-grey);
+}
+.contact-form-btn {
+    color: white;
+    font-size: 0.8125rem;
+    padding: 20px 100px;
+    border: none;
+    line-height: 1.125rem;
+    margin-top: 20px;
+    align-self: flex-end;
+
+}
+
 
 
