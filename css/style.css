@@ -479,7 +479,9 @@ a {
     line-height: 2.5rem;
 }
 
-
+.contact-form-box:nth-child(2) {
+    margin-top: 40px;
+}
 
 .checkbox-label {
     margin: 30px 0 20px;
@@ -495,11 +497,13 @@ a {
     width: 0;
     opacity: 0;
     cursor: pointer;
+    top: 30px;
+    left: 0;
 }
 
 .checkbox-label span {
     position: absolute;
-    top: 200;
+    top: 30px;
     left: 0;
     width: 25px;
     height: 25px;
@@ -507,9 +511,10 @@ a {
     background-color: var(--color-white);
     border-radius: 4px;
 }
-.checkbox-label input:checked ~ span {
-    background-image: url("/images/Checkmark.svg");
+.checkbox-label input:checked + span {
+    background-image: url("../images/Checkmark.svg");
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .checkbox-text {
@@ -529,6 +534,7 @@ a {
     align-self: flex-end;
 }
 
+/*SEKCJA FOOTER*/
 .footer {
     margin-top: 60px;
     height: 90px;
