@@ -28,6 +28,7 @@ body {
 a {
     text-decoration: none;
 }
+
 .logo {
     font-family: var(--font-raleway);
     font-size: 2rem;
@@ -41,6 +42,7 @@ a {
     padding: 15px 55px;
     cursor: pointer;
 }
+
 .title {
     font-size: 2.25rem;
     color: var(--color-black);
@@ -53,6 +55,7 @@ a {
     height: 70px;
     box-shadow: 0 3px 6px #00000029;
 }
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -63,9 +66,11 @@ a {
 .page-nav-list {
     display: flex;
 }
+
 .page-nav-list li {
     padding: 0 25px;
 }
+
 .page-nav-list li:last-child {
     padding-right: 0;
 }
@@ -78,8 +83,9 @@ a {
     letter-spacing: 0.205rem;
     border-bottom: 4px solid transparent;
     padding: 28px 15px 22px;
-/*    padding dla a tak ustawiony aby dolny border był tuż nad linia dolną */
+    /*    padding dla a tak ustawiony aby dolny border był tuż nad linia dolną */
 }
+
 .page-nav-list a:hover {
     color: var(--color-black);
     cursor: pointer;
@@ -95,6 +101,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .banner-title {
     font-size: 3.0625rem;
     color: var(--color-black);
@@ -102,12 +109,14 @@ a {
     text-align: center;
     line-height: 3.5rem;
 }
+
 .banner-text {
     color: var(--color-black);
     text-align: center;
     line-height: 1.375rem;
     padding: 20px 0 38px;
 }
+
 .banner-btn {
     display: block;
     color: var(--color-white);
@@ -116,6 +125,7 @@ a {
     text-align: center;
     width: 440px;
 }
+
 .banner-img {
     width: 100%;
 }
@@ -125,6 +135,7 @@ a {
 .statistics {
     margin-top: 100px;
 }
+
 .statistics-title {
     text-align: center;
     line-height: 2.625rem;
@@ -141,6 +152,7 @@ a {
     margin-top: 101px;
     max-width: 160px;
 }
+
 .statistics-circle {
     width: 63px;
     height: 63px;
@@ -148,27 +160,33 @@ a {
     position: relative;
     margin: 0 auto;
 }
+
 .statistics-box:nth-child(1) .statistics-circle {
     background-color: var(--color-redish);
 }
-.statistics-box:nth-child(2) .statistics-circle  {
+
+.statistics-box:nth-child(2) .statistics-circle {
     background-color: var(--color-primary);
 }
-.statistics-box:nth-child(3) .statistics-circle  {
+
+.statistics-box:nth-child(3) .statistics-circle {
     background-color: var(--color-green);
 }
 
 .statistics-img {
     position: absolute;
 }
+
 .statistics-box:nth-child(1) .statistics-img {
     top: 0;
     right: -12px;
 }
+
 .statistics-box:nth-child(2) .statistics-img {
     top: 15px;
     right: -20px;
 }
+
 .statistics-box:nth-child(3) .statistics-img {
     top: 5px;
     right: -25px;
@@ -182,6 +200,7 @@ a {
     letter-spacing: 0.1875rem;
     text-align: center;
 }
+
 .statistics-text {
     font-family: var(--font-raleway);
     color: var(--color-grey);
@@ -195,11 +214,13 @@ a {
     margin-top: 122px;
     padding: 105px 0;
 }
+
 .benefits-container {
-    width:1124px;
+    width: 1124px;
     flex-direction: column;
     justify-content: center;
 }
+
 .benefits-box-single {
     background-color: var(--color-white);
     height: 370px;
@@ -210,11 +231,13 @@ a {
     padding: 70px 35px;
     margin-bottom: 37px;
 }
+
 .benefits-box-double {
     height: 370px;
     display: flex;
     justify-content: space-between;
 }
+
 .benefits-box-single:nth-child(2) {
     flex-direction: row-reverse;
 }
@@ -225,6 +248,7 @@ a {
     width: 620px;
     background-color: var(--color-white);
 }
+
 .trumpet .box-right {
     border-radius: 5px;
     margin-left: 60px;
@@ -238,6 +262,7 @@ a {
 .benefits-content {
     max-width: 415px;
 }
+
 .benefits-content-trumpet {
     padding: 70px 35px;
 }
@@ -245,9 +270,11 @@ a {
 .benefits-title {
     line-height: 2.625rem;
 }
+
 .phone .benefits-title {
     padding-right: 100px;
 }
+
 .benefits-text {
     padding-top: 20px;
     line-height: 1.375rem;
@@ -256,6 +283,7 @@ a {
     justify-content: center;
     position: relative;
 }
+
 .benefits-text::after {
     content: "";
     display: block;
@@ -266,15 +294,19 @@ a {
     top: 136px;
     left: 0;
 }
+
 .phone .benefits-text::after {
     background-color: var(--color-primary);
 }
+
 .trumpet .benefits-text::after {
     background-color: var(--color-green);
 }
+
 .benefits-img {
     height: auto;
 }
+
 .macbook .benefits-image-container {
     width: 200px;
     height: 200px;
@@ -286,6 +318,7 @@ a {
     top: 5px;
     right: -120px;
 }
+
 .macbook .benefits-img {
     width: 385px;
     position: absolute;
@@ -293,16 +326,18 @@ a {
     top: 90px;
     right: -60px;
 }
+
 .phone .benefits-image-container {
     width: 320px;
     height: 320px;
     border-radius: 50%;
     position: relative;
     top: -50px;
-    left:-120px;
+    left: -120px;
     margin: 0 auto;
     background-color: var(--color-primary);
 }
+
 .phone .benefits-img {
     width: 425px;
     position: absolute;
@@ -319,10 +354,12 @@ a {
     width: 1266px;
     margin-top: 100px;
 }
+
 .pricing > .title {
     line-height: 2.625rem;
     text-align: center;
 }
+
 .boxes-container {
     height: 500px;
     display: flex;
@@ -330,6 +367,7 @@ a {
     align-items: center;
     margin-top: 50px;
 }
+
 .pricing-box {
     width: 370px;
     height: 460px;
@@ -342,28 +380,34 @@ a {
     align-items: center;
     position: relative;
 }
+
 .big-box {
     border-color: var(--color-primary);
     box-shadow: 5px 1px 27px var(--color-shadow);
     width: 400px;
-    height:500px;
+    height: 500px;
     margin: 0;
 }
+
 .pricing-type {
     text-align: center;
     padding-top: 35px;
 }
+
 .pricing-title {
     font-size: 1.25rem;
     font-family: var(--font-raleway);
     font-weight: bold;
 }
+
 .big-box .pricing-price {
     color: var(--color-primary);
 }
+
 .pricing-box:nth-child(3) {
     border-color: var(--color-green);
 }
+
 .pricing-box:nth-child(3) .pricing-price {
     color: var(--color-green);
 }
@@ -375,6 +419,7 @@ a {
     padding-top: 15px;
     line-height: 4.375rem;
 }
+
 .pricing-limited {
     font-family: var(--font-raleway);
     font-size: 0.75rem;
@@ -385,11 +430,13 @@ a {
 .pricing-list {
     padding-bottom: 60px;
 }
+
 .pricing-list li {
     padding-bottom: 20px;
     font-size: 0.875rem;
     text-align: center;
 }
+
 .pricing-single::before {
     content: "";
     display: inline-block;
@@ -398,6 +445,7 @@ a {
     margin-right: 10px;
     background-image: url("../images/Ckechmark-1.svg");
 }
+
 .single-not::before {
     background-image: url("../images/Close.svg");
 }
@@ -408,6 +456,7 @@ a {
     bottom: -25px;
 
 }
+
 .pricing-btn a {
     font-family: var(--font-raleway);
     font-size: 0.8125rem;
@@ -415,11 +464,13 @@ a {
     font-weight: 700;
     color: var(--color-white);
 }
+
 .pricing-box:nth-child(2) .pricing-btn {
     background-color: var(--color-primary);
     padding-left: 65px;
     padding-right: 65px;
 }
+
 .pricing-box:nth-child(3) .pricing-btn {
     background-color: var(--color-green);
 }
@@ -428,6 +479,7 @@ a {
 .contact {
     margin-top: 180px;
 }
+
 .contact-container {
     width: 896px;
     height: 375px;
@@ -435,18 +487,22 @@ a {
     justify-content: space-between;
     margin-top: 5px;
 }
+
 .contact-title {
     font-size: 3.0625rem;
     line-height: 3.4375rem;
 }
+
 .contact-text {
     margin: 22px 0 42px;
 }
+
 .contact-link {
     font-weight: 600;
     color: var(--color-grey);
     margin-right: 20px;
 }
+
 .contact-img {
     width: 27px;
     height: 27px;
@@ -460,6 +516,7 @@ a {
     justify-content: space-between;
     width: 440px;
 }
+
 .contact-form-box {
 }
 
@@ -471,6 +528,7 @@ a {
     color: var(--color-primary);
     font-weight: 700;
 }
+
 .contact-input {
     display: block;
     width: 440px;
@@ -511,6 +569,7 @@ a {
     background-color: var(--color-white);
     border-radius: 4px;
 }
+
 .checkbox-label input:checked + span {
     background-image: url("../images/Checkmark.svg");
     background-position: center;
@@ -541,26 +600,31 @@ a {
     padding: 20px 0;
     box-shadow: 0 -5px 40px #00000029;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .footer-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .footer-logo {
     font-size: 1.625rem;
     font-weight: 300;
 }
+
 .footer-copy {
     margin-top: 5px;
     font-size: 0.6875rem;
     line-height: 1.5rem;
     color: var(--color-grey);
 }
+
 .footer-icons a:nth-child(1) {
     margin-right: 25px;
 }
